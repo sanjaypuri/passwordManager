@@ -8,6 +8,8 @@ app.use(express.static('./build'));
 
 app.use(bodyParser.json());
 
+const PORT = process.env.PORT || 5000;
+
 app.use(cors(
   {
     origin:["http://localhost:3000", "https://phonebookfrontend.vercel.app"],
@@ -288,7 +290,7 @@ app.post('/api/newwallet', (req, resp)=>{
   }
 });
 
-app.listen(5000, ()=> {
-  console.log("server is listning on port 5000");
+app.listen(PORT, ()=> {
+  console.log(`server is listning on port ${PORT}`);
 });
 
