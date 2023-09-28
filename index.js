@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;
 
 app.use(cors(
   {
-    origin:["http://localhost:3000", "https://phonebookfrontend.vercel.app"],
+    origin:["http://localhost:3000", "https://password-manager-fawn.vercel.app"],
     methods:["GET", "POST", "DELETE", "PUT", "OPTIONS"],
     credentials: true
   }
